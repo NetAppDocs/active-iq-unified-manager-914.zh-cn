@@ -1,0 +1,44 @@
+---
+permalink: events/reference_metrocluster_bridge_events.html 
+sidebar: sidebar 
+keywords: metrocluster, bridge, events, impact area, availability 
+summary: MetroCluster 网桥事件为您提供有关网桥状态的信息，以便您可以监控潜在问题。事件按影响区域进行分组、并包括事件和陷阱名称、影响级别、源类型和严重性。 
+---
+= MetroCluster 网桥事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+MetroCluster 网桥事件可为您提供有关网桥状态的信息、以便您可以监控基于FC的MetroCluster 配置中的潜在问题。事件按影响区域进行分组、并包括事件和陷阱名称、影响级别、源类型和严重性。
+
+
+
+== 影响区域：可用性
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | 严重性 
+
+
+ a| 
+无法访问网桥（ ocumEvtBridgeUnreachable ）
+ a| 
+意外事件
+ a| 
+MetroCluster网桥
+ a| 
+关键
+
+
+
+ a| 
+网桥温度异常（ ocumEvtBridgeTemperatureAbnormal ）
+ a| 
+意外事件
+ a| 
+MetroCluster网桥
+ a| 
+关键
+
+|===

@@ -1,0 +1,97 @@
+---
+permalink: data-protection/view-protection-status.html 
+sidebar: sidebar 
+keywords: volume relationship, protection status, dashboard protection card, protection widget, lag, relationship health, healthy relationship, lag threshold, relationship event, source cluster, snapmirror, snapshot 
+summary: '" 数据保护 " 页面提供了数据中心中所有受保护卷的数据保护详细信息的整体视图。' 
+---
+= 查看卷保护状态
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+" 数据保护 " 页面提供了单个集群中所有受保护卷或数据中心中所有集群的数据保护详细信息的整体视图。
+
+.步骤
+. 在左侧导航窗格中，单击 * 信息板 * 。
+. 根据您要查看所有受监控集群或单个集群的数据保护状态，选择 * 所有集群 * 或从下拉菜单中选择一个集群。
+. 单击数据保护面板顶部的右箭头。此时将显示*数据保护*页面。
+
+
+根据您选择的是数据中心中的一个还是所有集群、此页面将显示受Snapshot副本或SnapMirror策略保护的卷的数据保护状态、并显示未受保护的卷的计数。
+
+从*单个集群*列表中选择一个集群可显示该集群中受保护卷的Snapshot保护和SnapMirror关系状态。
+
+单击此页面上的事件将转到事件详细信息页面。您可以单击 * 查看全部 * 链接以查看事件管理清单页面中的所有活动保护事件。您可以将鼠标悬停在此处查看相应的计数和图例。您可以单击：
+
+* 有关未受保护的卷和受Snapshot副本保护的卷的条形图、请转到卷页面并查看详细信息。
+* 所有关系的条形图将转到"关系"页面、其中的详细信息将按源集群进行筛选。
+
+
+
+
+== 查看受Snapshot副本保护的卷的保护状态
+
+* Snapshot副本概述*：Snapshot副本保护的卷概述、例如：
+
+* 受 Snapshot 副本保护和不受 Snapshot 副本保护的卷总数。
+* 正在使用或超过 Snapshot 副本预留空间的卷总数。
+
+
+* Snapshot 副本分析 * 详细介绍了以下信息：
+
+* Snapshot 副本的各个事件，包括过去 24 小时内引发的事件。
+* 受 Snapshot 副本保护和不受 Snapshot 副本保护的卷的详细图表。
+* 卷使用，未使用和违反预留的 Snapshot 副本容量。
+* 卷的细分按其 Snapshot 副本的数量计算。
+
+
+
+
+=== 有关Snapshot副本的注意事项
+
+* 要计算受Snapshot副本保护的卷、应同时考虑源卷和目标卷。
+* 返回的 Snapshot 副本数量仅适用于联机且可用的卷。
+* Snapshot副本数量的图形范围是动态的。它是根据选定集群中的快照数量生成的。
+* 要将某个卷视为受保护卷，应启用该卷的 Snapshot 副本计划。
+* Snapshot副本的预留空间值对于查看已用磁盘空间量或计算删除一个或多个Snapshot副本后可回收的空间非常重要。
+
+
+
+
+== 查看SnapMirror关系的保护状态
+
+* SnapMirror 概述 * ： SnapMirror 策略保护的卷概述，例如：
+
+* 受相应 SnapMirror 策略保护的卷数，例如卷 SnapMirror 关系， Storage VM 灾难恢复（ SVM-DR ）及其组合。
+* 根据滞后状态、发生恢复点目标(RPO)滞后的SnapMirror关系总数。
+
+
+* SnapMirror 分析 * 详细介绍了以下信息：
+
+* 为 SnapMirror 关系引发的各个事件，包括过去 24 小时内引发的事件
+* 每种类型的SnapMirror策略所保护的卷数。
+* 受SnapMirror关系类型(例如异步镜像、异步存储、异步镜像存储、StricxtSync、SnapMirror活动同步一致性组和同步)保护的关系数量。
+* 运行状况良好和运行状况不正常的关系的数量。
+* 卷关系计数的细分。您可以按RPO滞后时间和状态切换图表。
+* 非受管关系的滞后阈值。您可以单击设置图标image:../media/Settings.PNG["滞后阈值设置图标"]()来配置滞后阈值设置。有关详细信息，请参见 link:../health-checker/task_configure_lag_threshold_settings_for_unmanaged_protection.html["为非受管保护关系配置滞后阈值设置"]。
+
+
+
+
+=== 有关SnapMirror关系的注意事项
+
+* 在计算SnapMirror关系时、系统会计算已启用读取和写入的源卷。不考虑目标卷和根卷。
+* 对于SnapMirror关系、将显示源集群的事件。
+* SnapMirror关系计数包括源和目标位于相同或不同集群上的卷数。
+* 数据复制中RPO滞后的滞后持续时间取决于SnapMirror关系。根据设置的关系阈值，状态分类为 `ok`、 `warning`或 `error`。您可以查看状态以确定这些参数是否按预期工作、或者是否需要处理任何问题描述。
+* 如果卷具有多个SnapMirror关系、则每个关系类型都会计入RPO滞后。
+* 如果源和目标之间的数据复制出现问题、例如关系中断、则卷关系会被视为运行状况不正常。
+
+
+
+
+== 查看受MetroCluster 配置保护的集群
+
+"*数据保护*"页面上的"* MetroCluster Protection*"面板显示您站点上受MetroCluster 基于FC或IP配置保护或不受此保护的集群数量。单击此面板上的条形图将转到集群页面、在此页面中、将根据受保护或未受保护的集群筛选集群详细信息。有关监控MetroCluster配置的信息，请参见link:../storage-mgmt/task_monitor_metrocluster_configurations.html["监控 MetroCluster 配置"]。
