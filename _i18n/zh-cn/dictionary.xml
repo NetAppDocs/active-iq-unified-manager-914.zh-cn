@@ -5357,7 +5357,6 @@
   <block id="3f49ae06c1af2c81b1e8989e397b26f2" category="paragraph">指示集群是否已配置一个或多个 NTP 服务器。为了获得冗余和最佳服务， NetApp 建议至少将三个 NTP 服务器与集群相关联。</block>
   <block id="61aa63eb3ac1c3408640463ee5fe8aa3" category="paragraph">已配置</block>
   <block id="77b7590086fef2448bd31b90bf127474" category="paragraph">OCSP</block>
-  <block id="17eb499cf93e940dabb77ab4cc167dba" category="paragraph">指示 ONTAP 中是否存在未配置 OCSP （联机证书状态协议）的应用程序，因此通信不会加密。此时将列出不合规的应用程序。</block>
   <block id="559944e88ab64748857dfbbb5241e7cb" category="paragraph">远程审核日志记录</block>
   <block id="fe81c90ed55ff90f9e976347ff39d039" category="paragraph">指示日志转发（ Syslog ）是加密还是未加密。</block>
   <block id="07a3a798567f5e260ac46f63e67fd1d1" category="paragraph">AutoSupport HTTPS 传输</block>
@@ -11970,4 +11969,5 @@
   <block id="2d00b9d7d66bb4524df569339f8a571c" category="sidebar">直接从 Unified Manager 修复或管理 ONTAP 问题</block>
   <block id="9578fa84ff359de78da764edb1c96f57" category="sidebar">集群连接状态定义</block>
   <block id="baf5d44e1d7facdf126425b9dacabd71" category="sidebar">数据镜像状态定义</block>
+  <block id="3d937fc01fa5cc206639b1a0a897e80d" category="paragraph">从9.14.1开始、Active IQ Unified Manager可在Storage Virtual Machine (SVM、以前称为Vserver)级别提供联机证书状态协议(Online Certificate Status Protocol、OCSP)状态信息。这意味着、OCSP验证将应用于与SVM建立的所有SSL/TLS连接、并确保这些连接中使用的证书的完整性和有效性。</block>
 </blocks>
