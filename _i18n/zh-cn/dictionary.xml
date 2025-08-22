@@ -11166,7 +11166,6 @@
   <block id="8a13d1a5338f1794b0454274eb4286a1" category="summary">Active IQ Unified Manager 为您提供了 REST API ，用于查看有关监控和管理存储环境的信息。此外、还可以通过API根据策略配置和管理存储对象。</block>
   <block id="12d49648274bb61cf34ecef5c6ec1acc" category="doc">使用 Unified Manager REST API</block>
   <block id="3c7317176d7c7efc96ac34c6081c3782" category="paragraph">此外，您还可以使用 Unified Manager 支持的 API 网关在所有 ONTAP 管理的集群上执行 ONTAP API 。</block>
-  <block id="6b4f58d10ed3b35bb65050a16ca6ac3d" category="paragraph">有关Unified Manager REST API的信息，请参见<block ref="821164fa8c5ff02f6a5d3ecc3d001b16" category="inline-link-macro-rx"></block>。</block>
   <block id="f63bfd0f21322837ec283a9385287658" category="summary">触发将发生原因活动卷从一个集群移动到灾难恢复组中另一个集群的切换或切回事件。集群上处于活动状态并向客户端提供数据的卷将停止，而另一集群上的卷将激活并开始提供数据。Unified Manager 仅监控处于活动状态且正在运行的卷。</block>
   <block id="7edc2199c58b1da2fb3f4eafb729d425" category="paragraph">由于卷会从一个集群移动到另一个集群，因此建议您监控这两个集群。Unified Manager 的一个实例可以监控 MetroCluster 配置中的两个集群，但有时两个位置之间的距离需要使用两个 Unified Manager 实例来监控这两个集群。下图显示了 Unified Manager 的一个实例：</block>
   <block id="1f627cf53c59c3dcb003a3d36f72e53e" category="image-alt">显示Unified Manager单个实例的用户界面屏幕截图。</block>
@@ -11974,4 +11973,8 @@
   <block id="57149177e572f9b5329f85c287861767" category="paragraph">Unified Manager用于将审核日志发送到远程系统日志服务器。</block>
   <block id="a683cc8dbb0bb0e6b1793e6ba834ff32" category="inline-link">在Active IQ Unified Manager主机上更新Java后、服务将无法启动</block>
   <block id="09baf90eb42ecfec3f212db12b09fe09" category="list-text">您只能在Unified Manager主机上安装一个版本的Java；否则、系统可能无法确定要使用的版本。请参阅。<block ref="c8da8190d4ab26608407458b2e410255" category="inline-link-rx"></block></block>
+  <block id="cc8fe7d78ffdf74546d47ee78ae65dce" category="inline-link-macro">开始使用Active IQ Unified Manager REST API</block>
+  <block id="f6952e0b11db7160562f18106a9c16d6" category="paragraph">有关 Unified Manager REST API 的信息，请参阅<block ref="7c769569c7bbad9af49bc30dbb82753d" category="inline-link-macro-rx"></block>。</block>
+  <block id="46ddffc1618503c5b7bac4767df5963b" category="list-text">收集 15 天的性能数据需要大量 CPU。 NetApp建议您错开新集群的添加，以便数据连续性收集轮询不会同时在太多集群上运行。此外，如果您在数据连续性收集期间重新启动 Unified Manager，则收集将停止，并且您将在性能图表中看到缺失时间范围的间隙。</block>
+  <block id="40bbb8b87d3598ac9845a44abe43f38c" category="list-text">添加版本 9.14.1 或更高版本的ONTAP集群时，通信将通过云代理功能进行。 ONTAP会自动创建具有只读权限的内部服务帐户用户（例如，clus-agent-xxxx）。如果出现以下情况，Unified Manager 将停止从这些集群收集数据<block ref="45b8c9da551ea3a5a411451e7d91c303" prefix=" " category="inline-code"></block>用户已被删除。</block>
 </blocks>
