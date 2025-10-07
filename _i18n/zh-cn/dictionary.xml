@@ -3170,7 +3170,6 @@
   <block id="357a35aedd0c37deb3a881df778a9bb4" category="list-text">单击 * 还原 * 。</block>
   <block id="58c0234305a387b4aa60babbbd858295" category="paragraph">此时将开始还原过程。在后端创建作业以完成还原过程。</block>
   <block id="aa2724776cabef1aaa6642e924be93b0" category="list-text">如果要查看作业进度、请从左侧导航窗格导航到*保护&gt;作业*、从作业列表中查看还原作业的状态。</block>
-  <block id="f19eba4a48c0d8762f03ea93717fbfea" category="paragraph">如果 Cloud Volumes ONTAP HA 集群之间的还原操作失败并显示 NDMP 错误，您可能需要在目标集群中添加显式 AWS 路由，以便目标可以与源系统的集群管理 LIF 进行通信。您可以使用BlueXP执行此配置步骤。</block>
   <block id="7d85117aeb6dd780b49fc8bc5df44937" category="summary">暂停关系以停止发生计划传输后，您可以使用恢复重新启用计划传输，以便保护源卷或主卷上的数据。传输将在下一个计划传输间隔从检查点恢复（如果存在）。</block>
   <block id="f7badd266fb3b7da14e5a44e940795fe" category="doc">从卷关系页面恢复已暂停关系上的计划传输</block>
   <block id="c49784c79b4a831f938c96963dfe9e09" category="paragraph">暂停关系以停止发生计划的传输后，您可以使用 * 恢复 * 重新启用计划的传输，以便保护源卷或主卷上的数据。传输将在下一个计划传输间隔从检查点恢复（如果存在）。</block>
@@ -11977,4 +11976,5 @@
   <block id="f6952e0b11db7160562f18106a9c16d6" category="paragraph">有关 Unified Manager REST API 的信息，请参阅<block ref="7c769569c7bbad9af49bc30dbb82753d" category="inline-link-macro-rx"></block>。</block>
   <block id="46ddffc1618503c5b7bac4767df5963b" category="list-text">收集 15 天的性能数据需要大量 CPU。 NetApp建议您错开新集群的添加，以便数据连续性收集轮询不会同时在太多集群上运行。此外，如果您在数据连续性收集期间重新启动 Unified Manager，则收集将停止，并且您将在性能图表中看到缺失时间范围的间隙。</block>
   <block id="40bbb8b87d3598ac9845a44abe43f38c" category="list-text">添加版本 9.14.1 或更高版本的ONTAP集群时，通信将通过云代理功能进行。 ONTAP会自动创建具有只读权限的内部服务帐户用户（例如，clus-agent-xxxx）。如果出现以下情况，Unified Manager 将停止从这些集群收集数据<block ref="45b8c9da551ea3a5a411451e7d91c303" prefix=" " category="inline-code"></block>用户已被删除。</block>
+  <block id="323f966c65a63cb769e4f899cb19451f" category="paragraph">如果Cloud Volumes ONTAP HA 集群之间的还原操作因 NDMP 错误而失败，则可能需要在目标集群中添加明确的 AWS 路由，以便目标可以与源系统的集群管理 LIF 进行通信。您可以使用NetApp控制台执行此配置步骤。</block>
 </blocks>
