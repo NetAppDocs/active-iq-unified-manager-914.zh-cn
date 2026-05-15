@@ -29,7 +29,7 @@ Unified Manager 使用系统运行状况警报监控 MetroCluster 配置中的�
 * *保护*>*关系*>*关系：MetroCluster 视图
 
 
-有关信息，请参见 link:../storage-mgmt/task_monitor_metrocluster_configurations.html#monitor-connectivity-issues-in-metrocluster-over-ip["监控MetroCluster over IP中的连接问题"]。
+有关信息，请参见link:../storage-mgmt/task_monitor_metrocluster_configurations.html#monitor-connectivity-issues-in-metrocluster-over-ip-configuration["监控MetroCluster over IP中的连接问题"]。
 
 
 
