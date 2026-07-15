@@ -15,6 +15,7 @@ summary: 集群事件提供了有关集群状态的信息、可用于监控集�
 
 
 
+[[impact-area-availability]]
 == 影响区域：可用性
 
 星号（ * ）表示已转换为 Unified Manager 事件的 EMS 事件。
@@ -156,6 +157,7 @@ MetroCluster 遗留的备用磁盘（ ocumEvtSpaceDiskLeftBehind ）
 |===
 
 
+[[impact-area-capacity]]
 == 影响区域：容量
 
 |===
@@ -207,6 +209,7 @@ FabricPool 空间接近全满 * （ fabricpoolNearlyFull ）
 |===
 
 
+[[impact-area-configuration]]
 == 影响区域：配置
 
 |===
@@ -395,6 +398,7 @@ ONTAP EMS 事件分为三个 Unified Manager 事件严重性级别。
 |===
 
 
+[[impact-area-performance]]
 == 影响区域：性能
 
 |===
@@ -468,6 +472,7 @@ ONTAP EMS 事件分为三个 Unified Manager 事件严重性级别。
 |===
 
 
+[[impact-area-security]]
 == 影响区域：安全性
 
 |===

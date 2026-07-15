@@ -17,6 +17,7 @@ summary: 如果您计划在 NAS 或 SAN 设备上挂载 /opt/netapp 或 /opt/net
 
 
 
+[[configuring-the-selinux-context-when-optnetappdata-is-mounted]]
 == 挂载时配置SELinux环境 `/opt/netapp/data`
 
 如果已在系统中挂载 `/opt/netapp/data`，并且SELinux设置为 `Enforcing`，请确保的SELinux上下文类型设置为 `mysqld_db_t`，这是数据库文件位置的 `/opt/netapp/data`默认上下文元素。
@@ -66,6 +67,7 @@ drwxr-xr-x. mysql root unconfined_u:object_r:mysqld_db_t:s0 /opt/netapp/data/
 ----
 
 
+[[configuring-the-selinux-context-when-optnetapp-is-mounted-and-optnetappdata-is-also-mounted-separately]]
 == 在挂载时配置SELinux环境 `/opt/netapp`、 `/opt/netapp/data/`同时也单独挂载
 
 在此情景中、您首先应按照上一节所述为设置上下文 `/opt/netapp/data/`。为设置正确的上下文后 `/opt/netapp/data/`，请确保父目录 `/opt/netapp`未将SELinux上下文设置为 `file_t`。
@@ -125,6 +127,7 @@ drwxr-xr-x. mysql root unconfined_u:object_r:usr_t:s0 /opt/netapp
 ----
 
 
+[[configuring-the-selinux-context-when-optnetapp-is-mounted-and-optnetappdata-is-not-mounted-separately]]
 == 在挂载且未单独挂载 `/opt/netapp/data/`时配置SELinux环境 `/opt/netapp`
 
 如果已在系统中挂载 `/opt/netapp`，并且SELinux设置为 `Enforcing`，请确保的SELinux上下文类型设置为 `mysqld_db_t`，这是数据库文件位置的 `/opt/netapp`默认上下文元素。

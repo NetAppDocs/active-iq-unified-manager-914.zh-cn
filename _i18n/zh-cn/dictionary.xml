@@ -3476,7 +3476,6 @@
   <block id="47a1bdec12f9908ef6c7d1f58fb4b4c5" category="inline-link-macro">上传新的Active IQ规则文件</block>
   <block id="29c4d087728ce94ddf83b473dec84df3" category="paragraph">有关启用平台事件的详细信息，请参见<block ref="8658b0fde93c687ddd323db3f722b419" category="inline-link-macro-rx"></block>。有关上载规则文件的详细信息，请参见<block ref="b01374e7e4b241354108fd5f79d4fe7d" category="inline-link-macro-rx"></block>。</block>
   <block id="9b2dd5f36ee111b85cbdd29e104e3e55" category="inline-link">NetApp Active IQ</block>
-  <block id="9d704a09e3781ec3b4883efbf66a03bc" category="paragraph">NetApp Active IQ 是一项基于云的服务，可提供预测性分析和主动式支持，以优化 NetApp 混合云中的存储系统操作。有关详细信息、请参见<block ref="598c2869fc03de80441fdb1c505b1b08" category="inline-link-rx"></block> 。</block>
   <block id="e78be7c786a595ecf85d670520670e03" category="summary">事件持续发生时，只有当事件满足指定的筛选条件时， Unified Manager 才会生成警报。您可以选择应生成警报的事件，例如超出空间阈值或对象脱机时。您还可以将警报与触发警报时执行的脚本相关联。</block>
   <block id="5466ff3eb200eb7bcbb8dcc28afb32d8" category="doc">什么是警报</block>
   <block id="6b98fdbcc4abfd91989145ab4a3794b3" category="paragraph">事件持续发生时，只有当事件满足指定的筛选条件时， Unified Manager 才会生成警报。您可以选择应生成警报的事件，例如，超过空间阈值或对象脱机时。您还可以将警报与触发警报时执行的脚本相关联。</block>
@@ -7389,7 +7388,6 @@
   <block id="56bad51d0fd70713223e857396803caa" category="paragraph">Unified Manager 可以安装在具有少量内存的系统上，但建议的 12 GB RAM 可确保有足够的可用内存来实现最佳性能，并使系统可以随着配置的增长容纳更多集群和存储对象。您不应在部署 Unified Manager 的虚拟机上设置任何内存限制，也不应启用任何妨碍软件利用系统上分配的内存的功能（例如，热气球）。</block>
   <block id="118be0e1a3c862556b2a6426bdcd24de" category="paragraph">此外，在安装另一个 Unified Manager 实例之前，一个 Unified Manager 实例可以监控的节点数也存在限制。有关详细信息，请参见 _Best Practices Guide_ 。</block>
   <block id="9650789293045a87cc14a47729b5ebfc" category="inline-link">技术报告 4621 ：《 Unified Manager 最佳实践指南》</block>
-  <block id="ee26087a8b7ec790988603a3298c45f3" category="paragraph"><block ref="ee26087a8b7ec790988603a3298c45f3" category="inline-link-rx"></block></block>
   <block id="ccd350b03208f21a01e8434aa29bf22c" category="paragraph">内存页面交换会对系统和管理应用程序的性能产生负面影响。争用因主机整体利用率而不可用的 CPU 资源可能会降低性能。</block>
   <block id="eeedd0b411cf8b8d426d2fb1abee2797" category="section-title">专用要求</block>
   <block id="c74cdaf0de603354b9d68a1b99f50e57" category="paragraph">安装 Unified Manager 的物理或虚拟系统应专用于 Unified Manager ，不应与其他应用程序共享。其他应用程序可能会占用系统资源，并会大幅降低 Unified Manager 的性能。</block>
@@ -7875,7 +7873,6 @@
   <block id="a9b0dbc9157d19751650d85b8273cae0" category="list-text">5 GB （精简配置）</block>
   <block id="cb38ac590299a4579591b8687141d05e" category="list-text">152 GB （厚配置）</block>
   <block id="16cb709111f75691259b4300511c4561" category="inline-link-macro">《 Unified Manager 最佳实践指南》</block>
-  <block id="b1ef1e646481ec8adc66cc5d2b2018ba" category="paragraph">此外，在安装另一个 Unified Manager 实例之前，一个 Unified Manager 实例可以监控的节点数也存在限制。有关详细信息，请参见 <block ref="30a299cd9b89fb73ae0b956f3afc43ad" category="inline-link-macro-rx"></block>。</block>
   <block id="32e5c16a2c1109e106990eafe2e5051a" category="summary">基于 VMware vSphere 平台的 Unified Manager 快速入门指南。</block>
   <block id="6e9d444f5a98d00ae31eff389dc819fa" category="doc">VMware安装快速入门说明</block>
   <block id="d92bb0fdb003a277ed75c5c3745b9f31" category="paragraph">您可以下载<block ref="58963a595c988dc6f693cb3238dc907a" prefix=" " category="inline-code"></block>包含根证书、文件和<block ref="586ba478b7ebec665f3df120799b6c2e" prefix=" " category="inline-code"></block>文件的文件、<block ref="c47c7c7383225ab55ff591cb59c41e6b" prefix=" " category="inline-code"></block>并将Unified Manager部署为虚拟设备。</block>
@@ -11974,4 +11971,7 @@
   <block id="2923533b9f166644f807ccd4cdd652f4" category="paragraph">您还可以通过使用 VMware *Restart Guest* 选项从 vSphere 重新启动虚拟机。请参阅<block ref="a33f828e317a613e852412bb653667c4" category="inline-link-rx"></block></block>
   <block id="beaebf17f78286bd5f1e620cf360cf26" category="admonition">需要 Oracle 帐户才能下载文件。如果您没有 Oracle 帐户，请转到<block ref="55cce93bb9914d623967628ae7efe815" category="inline-link-macro-rx"></block>页面创建一个帐户。</block>
   <block id="a527ebab83d1a9eadfaa72bd8d759e9e" category="paragraph">有关信息，请参见<block ref="60444ca73da53841cba391c890082cfa" category="inline-link-macro-rx"></block>。</block>
+  <block id="2adbe8bdce2f61c208adbcdcc37e0d1e" category="paragraph">NetApp Active IQ 是一种基于云的服务，可提供预测分析和主动支持，以优化整个 NetApp 混合云的存储系统运行。有关详细信息，请参见<block ref="0e9077c60daec97818e84f64654ad149" category="inline-link-rx"></block>。</block>
+  <block id="34d3c2d39d6d85670998be5649271fee" category="paragraph"><block ref="34d3c2d39d6d85670998be5649271fee" category="inline-link-rx"></block></block>
+  <block id="44147a2c9ef6251f322e3e18dbdf97ed" category="paragraph">此外，在安装第二个 Unified Manager 实例之前，单个 Unified Manager 实例可以监视的节点数有限制。有关详细信息，请参见 <block ref="2c5cc47a014185f968ab45db0b0eacd1" category="inline-link-macro-rx"></block>。</block>
 </blocks>
